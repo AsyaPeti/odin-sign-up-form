@@ -49,3 +49,62 @@ button, input, select, textarea {
 }
 
 /* THE MAIN CONTENT */
+@font-face {
+    font-family: 'Alex Brush';
+    src: url('/fonts/AlexBrush-Regular.woff2') format('woff2'),
+        url('/fonts/AlexBrush-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+  display: flex;
+  font-family: var(--system-font-default), var(--system-font-top);
+}
+
+aside {
+  position: relative;
+  flex: none;
+  width: 680px;
+  aspect-ratio: 2 / 3;
+  background-image: url("/img/Photo-by-Milada-Vigerova-on-Unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+
+  & header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 280px;
+    padding: 1.5rem;
+    width: 100%;
+    background-color: #111a;
+
+    & h1 {
+      position: relative;
+      top: 1rem;
+      font:
+        7rem 'Alex Brush', var(--system-font-default), var(--system-font-top);
+      letter-spacing: 0.5rem;
+    }
+  }
+
+  & footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    & p {
+      width: 100%;
+      text-align: center;
+
+      & a {
+        text-decoration: underline;
+        color: inherit;
+      }
+    }
+  }
+}
