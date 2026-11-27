@@ -27,6 +27,8 @@ body {
 }
 
 p {
+  min-width: 45ch;
+  max-width: 75ch;
   text-wrap: pretty;
 }
 
@@ -59,11 +61,6 @@ button, input, select, textarea {
 body {
   background-color: #f8f5f2;
   font-family: var(--system-font-default), var(--system-font-top);
-}
-
-p {
-  min-width: 45ch;
-  max-width: 75ch;
 }
 
 aside {
