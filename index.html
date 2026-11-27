@@ -11,42 +11,96 @@
   <body>
     <aside>
       <header>
-        <img>
-        <h1></h1>
+        <img src="img/orchid.svg" alt="orchid-logo" width="100">
+        <h1>Orchid</h1>
       </header>
 
       <footer>
-        <p><a></a><a></a></p>
+        <p>
+          Photo by
+          <a
+            href="https://unsplash.com/photos/purple-and-white-flowers-in-tilt-shift-lens-flejOMAfgXA"
+            target="_blank"
+            rel="noreferrer">Milada Vigerova</a>
+          on
+          <a
+            href="https://unsplash.com/"
+            target="_blank"
+            rel="noreferrer">Unsplash</a>
+        </p>
       </footer>
     </aside>
     
     <main>
       <section>
-        <p><em></em></p>
+        <p>
+          Ready to stop killing your grocery store Phalaenopsis? Join our
+          community of orchid lovers to unlock care guides, rare bloom alerts,
+          and potting secrets. Sign up <em>now</em> to get started.
+        </p>
+        <br>
+        <p>Your windowsills <em>need</em> this.</p>
       </section>
 
-      <form>
-        <p></p>
+      <form id="account-form" action="" method="post">
+        <p>Let's get growing!</p>
         
         <fieldset>
-          <label></label>
-          <input>
-          <label></label>
-          <input>
-          <label></label>
-          <input>
-          <label></label>
-          <input>
-          <label></label>
-          <input>
-          <label></label>
-          <input>
+          <label for="first-name">
+            First name
+            <input
+              type="text"
+              id="first-name"
+              name="first-name">
+          </label>
+          
+          <label for="last-name">
+            Last name
+            <input
+              type="text"
+              id="last-name"
+              name="last-name">
+          </label>
+          
+          <label for="email">
+            Email
+            <input
+              type="email"
+              id="email"
+              name="email">
+          </label>
+          
+          <label for="phone-number">
+            Phone number
+            <input
+              type="tel"
+              id="phone-number"
+              name="phone-number">
+          </label>
+          
+          <label for="password">
+            Password
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required>
+          </label>
+          
+          <label for="confirm-password">
+            Confirm password
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirm-password"
+              required>
+          </label>
         </fieldset>
       </form>
 
       <section>
-        <button></button>
-        <p><a></a></p>
+        <button id="submit" form="account-form">Create account</button>
+        <p>Already have an account? <a href="">Log in</a></p>
       </section>
     </main>
   </body>
