@@ -74,40 +74,39 @@ aside {
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
+}
 
-  & header {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    margin-top: 224px;
-    padding: 24px;
+header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 224px;
+  padding: 24px;
+  width: 100%;
+  background-color: #111a;
+}
+
+h1 {
+  position: relative;
+  top: 16px;
+  font: 5rem 'Alex Brush', var(--system-font-default), var(--system-font-top);
+  letter-spacing: 0.5rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 16px;
+  width: 100%;
+
+  & p {
     width: 100%;
-    background-color: #111a;
+    font-size: 0.8rem;
+    text-align: center;
 
-    & h1 {
-      position: relative;
-      top: 16px;
-      font:
-        5rem 'Alex Brush', var(--system-font-default), var(--system-font-top);
-      letter-spacing: 0.5rem;
-    }
-  }
-
-  & footer {
-    position: absolute;
-    bottom: 16px;
-    width: 100%;
-
-    & p {
-      width: 100%;
-      font-size: 0.8rem;
-      text-align: center;
-
-      & a {
-        text-decoration: underline;
-        color: inherit;
-      }
+    & a {
+      text-decoration: underline;
+      color: inherit;
     }
   }
 }
@@ -115,56 +114,56 @@ aside {
 main {
   margin-left: calc(2 / 3 * 100vh);
   min-height: 100vh;
+}
 
-  & section.upper {
-    padding: 152px 152px 56px 72px;
-    font-size: 1.5rem;
-    font-weight: 500;
+section.upper {
+  padding: 152px 152px 56px 72px;
+  font-size: 1.5rem;
+  font-weight: 500;
 
-    & p + p {
-      margin-top: 1em;
-    }
+  & p + p {
+    margin-top: 1em;
   }
+}
 
-  & form {
+form {
     padding: 16px 0 40px 72px;
     background-color: white;
     box-shadow: 0 4px 4px #1113;
 
-    & p {
-      font-size: 1.5rem;
-      font-weight: 500;
-    }
-
-    & fieldset {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px 64px;
-      margin-top: 24px;
-      border: none;
-      padding: 0;
-      min-width: 45ch;
-      max-width: 75ch;
-
-      & label {
-        display: flex;
-        flex-direction: column;
-        font-size: 0.8rem;
-        font-weight: 500;
-        letter-spacing: 0.1rem;
-        text-transform: uppercase;
-
-        & input {
-          margin-top: 4px;
-          border: 1px solid #1112;
-          border-radius: 4px;
-          padding: 0.3rem;
-          width: 272px;
-          background-color: #f8f5f244;
-          font-size: 1rem;
-          text-transform: initial;
-        }
-      }
-    }
+  & p {
+    font-size: 1.5rem;
+    font-weight: 500;
   }
+}
+
+fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 64px;
+  margin-top: 24px;
+  border: none;
+  padding: 0;
+  min-width: 45ch;
+  max-width: 75ch;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+input {
+  margin-top: 4px;
+  border: 1px solid #1112;
+  border-radius: 4px;
+  padding: 0.3rem;
+  width: 272px;
+  background-color: #f8f5f244;
+  font-size: 1rem;
+  text-transform: initial;
 }
