@@ -23,12 +23,10 @@ html {
 
 /* Pick smaller line-height values for headings (calc(1em + 0.5rem)) */
 body {
-  line-height: 1.1;
   -webkit-font-smoothing: antialiased;
 }
 
 p {
-  overflow-wrap: break-word;
   text-wrap: pretty;
 }
 
@@ -59,15 +57,18 @@ button, input, select, textarea {
 }
 
 body {
-  display: flex;
-  align-items: flex-start;
+  background-color: #f8f5f2;
   font-family: var(--system-font-default), var(--system-font-top);
 }
 
+p {
+  min-inline-size: 45ch;
+  max-inline-size: 75ch;
+}
+
 aside {
-  position: relative;
-  flex: none;
-  width: 680px;
+  position: fixed;
+  height: 100vh;
   aspect-ratio: 2 / 3;
   background-image: url("/img/Photo-by-Milada-Vigerova-on-Unsplash.jpg");
   background-size: cover;
@@ -95,7 +96,7 @@ aside {
 
   & footer {
     position: absolute;
-    bottom: 0;
+    bottom: 1rem;
     width: 100%;
 
     & p {
@@ -111,7 +112,7 @@ aside {
 }
 
 main {
-  background-color: #f8f5f2;
+  margin-left: 70vh;
 
   & section.upper {
     padding: 200px 200px 75px 50px;
