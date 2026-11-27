@@ -23,7 +23,7 @@ html {
 
 /* Pick smaller line-height values for headings (calc(1em + 0.5rem)) */
 body {
-  line-height: 1.5;
+  line-height: 1.1;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -60,6 +60,7 @@ button, input, select, textarea {
 
 body {
   display: flex;
+  align-items: flex-start;
   font-family: var(--system-font-default), var(--system-font-top);
 }
 
@@ -105,6 +106,20 @@ aside {
         text-decoration: underline;
         color: inherit;
       }
+    }
+  }
+}
+
+main {
+  background-color: #f8f5f2;
+
+  & section.upper {
+    padding: 200px 200px 75px 50px;
+    font-size: 2rem;
+    font-weight: 500;
+
+    & p + p {
+      margin-top: 1em;
     }
   }
 }
